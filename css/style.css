@@ -1,0 +1,31 @@
+body{
+    background-color: #212529;
+}
+
+.collapse .nav-link:hover{
+    border: 2px solid #00bfff;     /* لون أزرق مشابه للصورة */
+  border-radius: 20px;           /* يخلي الزوايا مدورة */
+  padding: 5px 15px;
+}
+
+
+#home{
+    background-image: url(../images/Hero.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh; 
+}
+
+.card{
+    background-color: #323544;
+    color: white;
+}
+
+
+.card-header{
+    background-color: #2d303d;
+}
+
+
+

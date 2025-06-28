@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <!-- start nav -->
+    <nav class="navbar navbar-expand-lg bg-dark py-4">
+        <div class="container">
+            <a class="navbar-brand d-flex text-white" href="#">
+                <img src="./images/logo@2x.png" width="64" alt="Logo-image">
+                <div class="ms-3">
+                    <h1 class="m-0 fs-5">Weather</h1>
+                    <small>tagline goes here</small>
+                </div>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active border border-info rounded-pill px-3 py-1 me-3"
+                            aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-3 py-1 me-3" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-3 py-1 me-3" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-3 py-1 me-3" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-3 py-1 me-3" href="#">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start header -->
+    <header id="home" class="py-5">
+        <div class="container text-white">
+
+            <!-- جزء البحث -->
+            <div class="row mb-4">
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="search" placeholder="Find your location..." id="search"
+                        class="border border-dark rounded-pill py-3 w-75 bg-dark text-white me-3 form-control">
+                    <button class="btn btn-info text-white px-4 py-2 rounded-pill" id="find">Find</button>
+                </div>
+            </div>
+
+            <div class="row justify-content-center g-3" id="weather">
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- end header -->
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
