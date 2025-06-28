@@ -7,7 +7,7 @@ findButton.addEventListener("click",getWeather)
 async function getWeather() {   
     try {
         const input = document.getElementById("search").value.trim() || "Cairo"; // fallback للـ default
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${input}&days=3`);
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${input}&days=3`);
         const data = await response.json();
         displayWeather(data);
     } catch (error) {
