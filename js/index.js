@@ -1,12 +1,14 @@
 const apiKey='f466d2eb0c5c42afb88175814252806';
 const findButton=document.getElementById("find");
+const myLocation=document.getElementById("find-Location")
 
 findButton.addEventListener("click",getWeather)
+myLocation.addEventListener("click",getMyLocationWeather)
 
 
 async function getWeather() {   
     try {
-        const input = document.getElementById("search").value.trim() || "Cairo"; // fallback للـ default
+        const input = document.getElementById("search").value.trim();
         const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${input}&days=3`);
         const data = await response.json();
         displayWeather(data);
@@ -15,6 +17,16 @@ async function getWeather() {
     }
 }
 
+
+async function getMyLocationWeather() {   
+    try {
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=cairo&days=3`);
+        const data = await response.json();
+        displayWeather(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 
 
